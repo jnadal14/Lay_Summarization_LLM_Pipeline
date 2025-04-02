@@ -1,0 +1,17 @@
+# Package Requirements
+
+- transformers
+- datasets
+- evaluate
+- rouge-score 
+- absl-py
+- scikit-learn
+- bert_score
+- ollama
+- wandb
+- pathlib
+- datetime
+- os
+- sys
+- argparse
+- torch
