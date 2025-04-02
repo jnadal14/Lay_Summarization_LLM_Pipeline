@@ -1,29 +1,22 @@
-# Milestone 5: Refined LLaMA 2 Inference & Lay Summarization
+# COLX 531/585 Group Project - Lay Summarization of Biomedical Research Articles and Radiology
 
-## **Overview**
+## Group Repository: Daoming Liu, Jacob Nadal, Cole Piche, Juan Tampubolon
 
-In Milestone 5, we improve the quality and usability of our lay summarization pipeline by refining the inference process using **LLaMA 2 via Ollama**. Building on Milestone 4, our focus shifts to **prompt engineering**, **clean output formatting**, and **controlled evaluation**, while preserving full compatibility with Weights & Biases (W&B) and Hugging Face evaluation metrics.
+### **Project Overview**
+This repository contains our group project for COLX 531 – Neural Machine Translation, focusing on lay summarization of biomedical research papers and radiology findings. Our goal is to generate concise, plain-language summaries from scientific or clinical abstracts so that non-expert audiences can easily understand key insights. We use LLaMA 2 via Ollama, along with streaming output and improved prompt engineering, to produce short, jargon-minimized summaries in JSON format for clear downstream evaluation.
 
-We split compute responsibilities: inference runs efficiently on Jacob’s Apple Silicon MacBook using Ollama, while evaluation is performed on Cole’s higher-performance GPU machine due to BERTScore memory constraints.
+## **Key Scripts**
 
----
+`main.py` is the central script that orchestrates the entire pipeline:
 
-## **Key Improvements Over Milestone 4**
+- **Preprocessing**  
+  It first calls `scripts/preprocess.py` (if needed) to load and clean the dataset, remove irrelevant fields, and split the data into train/test.
 
-- **Improved Prompt Engineering**  
-  Prompts now instruct the model to produce concise, plain-language summaries with minimal biomedical jargon, formatted as a clean JSON list. This reduces verbosity and ensures consistency for downstream evaluation.
+- **Inference**  
+  Next, it invokes `scripts/inference.py` to run the LLaMA 2 model. We pass curated prompts that ensure the summaries are short, user-friendly, and consistently formatted.
 
-- **Streaming Inference Output**  
-  Input excerpts and model summaries are printed in real-time, enabling easier inspection and debugging during generation.
-
-- **Path Robustness with `pathlib`**  
-  All file paths are relative to the project root, ensuring smooth cross-platform operation regardless of environment.
-
-- **Evaluation Toggle**  
-  A new `shouldEvaluate` flag allows evaluation to be run independently, enabling division of work between team members.
-
-- **Weights & Biases Integration**  
-  All inference and evaluation results are logged to W&B with dynamically named runs and optional per-sample metrics.
+- **Evaluation**  
+ If a flag (e.g., shouldEvaluate) is set to True, main.py finally calls scripts/evaluate_model.py to compute metrics such as ROUGE, BLEU, and BERTScore. The results can be logged locally or to Weights & Biases for collaborative tracking.
 
 ---
 
@@ -39,5 +32,6 @@ COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/
 │   ├── test_predictions.json    # JSON summaries from LLaMA 2
 │   ├── test_input.json          # Corresponding input abstracts
 ├── wandb/                       # Weights & Biases logs
+├── REQUIREMENTS.txt             # List of packages required to run main.py
 └── README.md                    # This file
 ```
