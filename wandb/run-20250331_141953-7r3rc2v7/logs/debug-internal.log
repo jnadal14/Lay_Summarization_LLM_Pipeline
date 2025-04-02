@@ -1,0 +1,16 @@
+{"time":"2025-03-31T14:19:53.350017-07:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/wandb/run-20250331_141953-7r3rc2v7/logs/debug-core.log"}
+{"time":"2025-03-31T14:19:53.480448-07:00","level":"INFO","msg":"created new stream","id":"7r3rc2v7"}
+{"time":"2025-03-31T14:19:53.480539-07:00","level":"INFO","msg":"stream: started","id":"7r3rc2v7"}
+{"time":"2025-03-31T14:19:53.480578-07:00","level":"INFO","msg":"writer: Do: started","stream_id":"7r3rc2v7"}
+{"time":"2025-03-31T14:19:53.480592-07:00","level":"INFO","msg":"handler: started","stream_id":"7r3rc2v7"}
+{"time":"2025-03-31T14:19:53.480904-07:00","level":"INFO","msg":"sender: started","stream_id":"7r3rc2v7"}
+{"time":"2025-03-31T14:19:53.76135-07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-31T14:22:09.73831-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/jacob24-university-of-british-columbia/BioLaySumm-2025/7r3rc2v7/file_stream\": read tcp 192.168.1.149:54390->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-31T14:23:05.00672-07:00","level":"INFO","msg":"stream: closing","id":"7r3rc2v7"}
+{"time":"2025-03-31T14:23:05.006876-07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-31T14:23:05.013944-07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-31T14:23:05.462319-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-31T14:23:05.623601-07:00","level":"INFO","msg":"handler: closed","stream_id":"7r3rc2v7"}
+{"time":"2025-03-31T14:23:05.623622-07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7r3rc2v7"}
+{"time":"2025-03-31T14:23:05.623917-07:00","level":"INFO","msg":"sender: closed","stream_id":"7r3rc2v7"}
+{"time":"2025-03-31T14:23:05.624015-07:00","level":"INFO","msg":"stream: closed","id":"7r3rc2v7"}

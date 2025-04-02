@@ -1,0 +1,41 @@
+
+Step 4: Loading & Preprocessing Data...
+Loading datasets from Hugging Face...
+PLOS dataset loaded successfully with 24773 samples.
+eLife dataset loaded successfully with 4346 samples.
+Traceback (most recent call last):
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 110, in <module>
+    main()
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 85, in main
+    train_data, dev_data = load_and_preprocess()
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/scripts/preprocess.py", line 32, in load_and_preprocess
+    full_data = list(PLOS["train"]) + list(eLife["train"])
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2387, in __iter__
+    formatted_output = format_table(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 658, in format_table
+    return formatter(pa_table, query_type=query_type)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 411, in __call__
+    return self.format_row(pa_table)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 459, in format_row
+    row = self.python_arrow_extractor().extract_row(pa_table)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 145, in extract_row
+    return _unnest(pa_table.to_pydict())
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 110, in <module>
+    main()
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 85, in main
+    train_data, dev_data = load_and_preprocess()
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/scripts/preprocess.py", line 32, in load_and_preprocess
+    full_data = list(PLOS["train"]) + list(eLife["train"])
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2387, in __iter__
+    formatted_output = format_table(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 658, in format_table
+    return formatter(pa_table, query_type=query_type)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 411, in __call__
+    return self.format_row(pa_table)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 459, in format_row
+    row = self.python_arrow_extractor().extract_row(pa_table)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/datasets/formatting/formatting.py", line 145, in extract_row
+    return _unnest(pa_table.to_pydict())
+KeyboardInterrupt

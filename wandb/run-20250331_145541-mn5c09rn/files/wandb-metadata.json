@@ -1,0 +1,44 @@
+{
+  "os": "macOS-15.0.1-x86_64-i386-64bit",
+  "python": "CPython 3.10.16",
+  "startedAt": "2025-03-31T21:55:41.922687Z",
+  "program": "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py",
+  "codePath": "milestone5/main.py",
+  "git": {
+    "remote": "git@github.ubc.ca:MDS-CL-2024-25/COLX_531_Project_Cole-Daoming-Jacob-Juan.git",
+    "commit": "263b9ebd4eb9cdf7a80322e48f20315917aa90e2"
+  },
+  "email": "jacob24@rogers.com",
+  "root": "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5",
+  "host": "Jacob-Nadals-MacBook-Pro.local",
+  "executable": "/Users/jacob/miniforge3/envs/COLX/bin/python3",
+  "codePathLocal": "main.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "494384795648",
+      "used": "478386077696"
+    },
+    "/System/Volumes/Data": {
+      "total": "494384795648",
+      "used": "478386077696"
+    }
+  },
+  "memory": {
+    "total": "17179869184"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 8
+  },
+  "apple": {
+    "name": "Unknown",
+    "ecpuCores": 2,
+    "pcpuCores": 6,
+    "gpuCores": 14,
+    "memoryGb": 16,
+    "swapTotalBytes": "4294967296",
+    "ramTotalBytes": "17179869184"
+  }
+}

@@ -1,0 +1,15 @@
+{"time":"2025-03-31T14:31:54.868274-07:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/wandb/run-20250331_143154-im9goxqt/logs/debug-core.log"}
+{"time":"2025-03-31T14:31:55.001138-07:00","level":"INFO","msg":"created new stream","id":"im9goxqt"}
+{"time":"2025-03-31T14:31:55.001197-07:00","level":"INFO","msg":"stream: started","id":"im9goxqt"}
+{"time":"2025-03-31T14:31:55.001294-07:00","level":"INFO","msg":"writer: Do: started","stream_id":"im9goxqt"}
+{"time":"2025-03-31T14:31:55.001402-07:00","level":"INFO","msg":"handler: started","stream_id":"im9goxqt"}
+{"time":"2025-03-31T14:31:55.001438-07:00","level":"INFO","msg":"sender: started","stream_id":"im9goxqt"}
+{"time":"2025-03-31T14:31:55.231388-07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-31T14:32:06.456407-07:00","level":"INFO","msg":"stream: closing","id":"im9goxqt"}
+{"time":"2025-03-31T14:32:06.456744-07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-31T14:32:06.457906-07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-31T14:32:06.887437-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-31T14:32:07.247174-07:00","level":"INFO","msg":"handler: closed","stream_id":"im9goxqt"}
+{"time":"2025-03-31T14:32:07.247375-07:00","level":"INFO","msg":"sender: closed","stream_id":"im9goxqt"}
+{"time":"2025-03-31T14:32:07.247227-07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"im9goxqt"}
+{"time":"2025-03-31T14:32:07.248151-07:00","level":"INFO","msg":"stream: closed","id":"im9goxqt"}

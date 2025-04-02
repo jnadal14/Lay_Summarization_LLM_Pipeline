@@ -1,0 +1,172 @@
+
+Step 4: Loading & Preprocessing Data...
+Loading datasets from Hugging Face...
+PLOS dataset loaded successfully with 24773 samples.
+eLife dataset loaded successfully with 4346 samples.
+Total samples combined: 29119
+Data split: 26207 train, 2912 dev samples.
+<class 'list'>
+
+Step 6: Running Inference...
+Predicting with llama2...
+
+time to compute output: 15.270711898803711
+
+--- Sample 1 ---
+Input (first 3 lines):
+In systems and computational biology , much effort is devoted to functional identification of systems and networks at the molecular-or cellular scale . However , similarly important networks exist at anatomical scales such as the tendon network of human fingers: the complex array of collagen fibers
+
+Model Output:
+["Experimental Inference of Functional Tendon Network Structure"] Scientists have long studied the complex networks within living things, like molecular systems and cells. However, they've found that similar networks exist at larger scales, like the tendons in our fingers. These networks are crucial...
+----------------------------
+time to compute output: 5.561630964279175
+
+--- Sample 2 ---
+Input (first 3 lines):
+Helicobacter pylori ( H . pylori ) is the major risk factor for the development of gastric cancer . Our laboratory has reported that the Sonic Hedgehog ( Shh ) signaling pathway is an early response to infection that is fundamental to the initiation of H . pylori-induced gastritis . H . pylori also
+
+Model Output:
+H. pylori infection induces PD-L1 expression in gastric epithelial cells through the Shh signaling pathway, potentially protecting premalignant lesions from immune surveillance and contributing to gastric cancer development.
+----------------------------
+time to compute output: 7.2274329662323
+
+--- Sample 3 ---
+Input (first 3 lines):
+Small RNAs are functional molecules that modulate mRNA transcripts and have been implicated in the aetiology of several common diseases . However , little is known about the extent of their variability within the human population . Here , we characterise the extent , causes , and effects of naturall
+
+Model Output:
+Here is a simplified summary of the study in under 100 words: The study characterized natural variation in small RNA expression and sequence in the human population, focusing on adipose tissue. High-throughput sequencing was used to profile expression of 15-30 base pair RNAs in 131 individuals. Gene...
+----------------------------
+time to compute output: 9.596840858459473
+
+--- Sample 4 ---
+Input (first 3 lines):
+Modern enzymes are highly optimized biocatalysts that process their substrates with extreme efficiency . Many enzymes catalyze more than one reaction; however , the persistence of such ambiguities , their consequences and evolutionary causes are largely unknown . As a paradigmatic case , we study th
+
+Model Output:
+Here is a simplified summary of the text in under 100 words: Enzymes are highly optimized biocatalysts that can process multiple reactions without evolutionary pressure. A study of the sugar isomerase HisA from histidine biosynthesis shows that it has been bi-functional for at least two billion year...
+----------------------------
+time to compute output: 7.1098480224609375
+
+--- Sample 5 ---
+Input (first 3 lines):
+The correspondence between protein sequences and structures , or sequence-structure map , relates to fundamental aspects of structural , evolutionary and synthetic biology . The specifics of the mapping , such as the fraction of accessible sequences and structures , or the sequences' ability to fold
+
+Model Output:
+Here is a simplified summary of the excerpt for a general audience: ["The mapping between protein sequences and structures, called the sequence-structure map, reveals important insights into evolutionary and synthetic biology. By analyzing the interactions between monomers in protein sequences, rese...
+----------------------------
+time to compute output: 7.655862092971802
+
+--- Sample 6 ---
+Input (first 3 lines):
+Electrophysiological studies of the human heart face the fundamental challenge that experimental data can be acquired only from patients with underlying heart disease . Regarding human atria , there exist sizable gaps in the understanding of the functional role of cellular Ca2+ dynamics , which diff
+
+Model Output:
+Our study developed a mathematical model of human atrial myocytes that accounts for the heterogeneity of intracellular calcium dynamics. The model simulates the biphasic increase in calcium concentrations during the upstroke of the calcium transient and reproduces the principal characteristics of ca...
+----------------------------
+time to compute output: 6.750211715698242
+
+--- Sample 7 ---
+Input (first 3 lines):
+Microtubules are nano-machines that grow and shrink stochastically , making use of the coupling between chemical kinetics and mechanics of its constituent protofilaments ( PFs ) . We investigate the stability and shrinkage of microtubules taking into account inter-protofilament interactions and bend
+
+Model Output:
+Here is a simplified summary of the main finding in under 100 words: Microtubules, essential cellular structures, shrink due to competition between energy from intrinsic curvature and inter-protofilament interactions. Our analysis shows that the strength of these interactions must be comparable for ...
+----------------------------
+time to compute output: 10.14514708518982
+
+--- Sample 8 ---
+Input (first 3 lines):
+Zoonotic pathogens that cause leprosy ( Mycobacterium leprae ) and tuberculosis ( Mycobacterium tuberculosis complex , MTBC ) continue to impact modern human populations . Therefore , methods able to survey mycobacterial infection in potential animal hosts are necessary for proper evaluation of huma
+
+Model Output:
+Mycobacterial infection detection in animal hosts is crucial for assessing human exposure threats. qPCR techniques were tested in a trial study and found to be specific and sensitive for detecting Mycobacterium leprae and the Mycobacterium tuberculosis complex (MTBC) in armadillos. These assays were...
+----------------------------
+Traceback (most recent call last):
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 114, in <module>
+    main()
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 100, in main
+    generate_summaries(model, dev_data, "llama2", summary_method) # "first_500" or "chunks_100", "chunks_100" is not fully developed yet
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/scripts/inference.py", line 101, in generate_summaries
+    raw_pred, inp = generate_summary_first_500(model_name, ex["article"])
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/scripts/inference.py", line 56, in generate_summary_first_500
+    response = ollama.chat(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/ollama/_client.py", line 333, in chat
+    return self._request(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/ollama/_client.py", line 178, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/ollama/_client.py", line 118, in _request_raw
+    r = self._client.request(*args, **kwargs)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 114, in <module>
+    main()
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 100, in main
+    generate_summaries(model, dev_data, "llama2", summary_method) # "first_500" or "chunks_100", "chunks_100" is not fully developed yet
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/scripts/inference.py", line 101, in generate_summaries
+    raw_pred, inp = generate_summary_first_500(model_name, ex["article"])
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/scripts/inference.py", line 56, in generate_summary_first_500
+    response = ollama.chat(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/ollama/_client.py", line 333, in chat
+    return self._request(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/ollama/_client.py", line 178, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/ollama/_client.py", line 118, in _request_raw
+    r = self._client.request(*args, **kwargs)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "/Users/jacob/miniforge3/envs/COLX/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+KeyboardInterrupt

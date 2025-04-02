@@ -1,0 +1,16 @@
+{"time":"2025-03-31T14:04:26.522631-07:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/wandb/run-20250331_140426-ds4114v0/logs/debug-core.log"}
+{"time":"2025-03-31T14:04:26.651559-07:00","level":"INFO","msg":"created new stream","id":"ds4114v0"}
+{"time":"2025-03-31T14:04:26.65164-07:00","level":"INFO","msg":"stream: started","id":"ds4114v0"}
+{"time":"2025-03-31T14:04:26.651683-07:00","level":"INFO","msg":"writer: Do: started","stream_id":"ds4114v0"}
+{"time":"2025-03-31T14:04:26.651712-07:00","level":"INFO","msg":"sender: started","stream_id":"ds4114v0"}
+{"time":"2025-03-31T14:04:26.651788-07:00","level":"INFO","msg":"handler: started","stream_id":"ds4114v0"}
+{"time":"2025-03-31T14:04:26.858739-07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-31T14:04:56.92181-07:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-31T14:07:54.112138-07:00","level":"INFO","msg":"stream: closing","id":"ds4114v0"}
+{"time":"2025-03-31T14:07:54.113137-07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-31T14:07:54.120211-07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-31T14:07:54.557456-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-31T14:07:54.815511-07:00","level":"INFO","msg":"handler: closed","stream_id":"ds4114v0"}
+{"time":"2025-03-31T14:07:54.815704-07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ds4114v0"}
+{"time":"2025-03-31T14:07:54.816668-07:00","level":"INFO","msg":"sender: closed","stream_id":"ds4114v0"}
+{"time":"2025-03-31T14:07:54.817096-07:00","level":"INFO","msg":"stream: closed","id":"ds4114v0"}

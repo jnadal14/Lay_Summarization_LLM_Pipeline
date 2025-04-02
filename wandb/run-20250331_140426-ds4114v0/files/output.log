@@ -1,0 +1,233 @@
+
+Step 4: Loading & Preprocessing Data...
+Loading datasets from Hugging Face...
+PLOS dataset loaded successfully with 24773 samples.
+eLife dataset loaded successfully with 4346 samples.
+Total samples combined: 29119
+Data split: 26207 train, 2912 dev samples.
+<class 'list'>
+
+Step 6: Running Inference...
+Predicting with llama2...
+
+time to compute output: 14.623053789138794
+time to compute output: 7.37938666343689
+time to compute output: 7.720491170883179
+time to compute output: 7.380604267120361
+time to compute output: 9.049320936203003
+time to compute output: 9.580137014389038
+time to compute output: 8.72458004951477
+time to compute output: 11.73853588104248
+time to compute output: 7.957499027252197
+time to compute output: 6.492274045944214
+time to compute output: 16.42823600769043
+time to compute output: 7.092792987823486
+time to compute output: 11.555449962615967
+time to compute output: 16.09839391708374
+time to compute output: 7.810973882675171
+time to compute output: 10.941898107528687
+time to compute output: 8.441200017929077
+time to compute output: 8.762433052062988
+time to compute output: 7.980947256088257
+time to compute output: 7.047906875610352
+
+--- Sample 1 ---
+Input (first 3 lines):
+In systems and computational biology , much effort is devoted to functional identification of systems and networks at the molecular-or cellular scale . However , similarly important networks exist at anatomical scales such as the tendon network of human fingers: the complex array of collagen fibers
+
+Model Output:
+Sure, here's the summary of the article you provided in one concise paragraph for a general audience:
+
+Researchers have developed a new approach to inferring the structure of complex biological networks, such as tendon networks in the human hand. Existing methods often rely on random testing or assu...
+----------------------------
+
+--- Sample 2 ---
+Input (first 3 lines):
+Helicobacter pylori ( H . pylori ) is the major risk factor for the development of gastric cancer . Our laboratory has reported that the Sonic Hedgehog ( Shh ) signaling pathway is an early response to infection that is fundamental to the initiation of H . pylori-induced gastritis . H . pylori also
+
+Model Output:
+H. pylori infection is the major risk factor for gastric cancer, and the bacteria induce PD-L1 expression on gastric epithelial cells. The mechanism of this induction is thought to be mediated by the Shh signaling pathway within the gastric epithelium. Cells infected with H. pylori that express PD-L...
+----------------------------
+
+--- Sample 3 ---
+Input (first 3 lines):
+Small RNAs are functional molecules that modulate mRNA transcripts and have been implicated in the aetiology of several common diseases . However , little is known about the extent of their variability within the human population . Here , we characterise the extent , causes , and effects of naturall
+
+Model Output:
+Here is a summary of the article in plain English:
+
+Researchers studied the variation in small RNA molecules in human adipose tissue to understand how they affect gene expression and metabolism. They found that there is natural variation in the expression of these small RNAs, which are involved in r...
+----------------------------
+
+--- Sample 4 ---
+Input (first 3 lines):
+Modern enzymes are highly optimized biocatalysts that process their substrates with extreme efficiency . Many enzymes catalyze more than one reaction; however , the persistence of such ambiguities , their consequences and evolutionary causes are largely unknown . As a paradigmatic case , we study th
+
+Model Output:
+Here is the summary of the article in plain English and under 100 words:
+
+Scientists studied the history of an enzyme called HisA, which processes two different reactions. They found that the enzyme remained bi-functional for over two billion years without any clear evolutionary pressure to do so. T...
+----------------------------
+
+--- Sample 5 ---
+Input (first 3 lines):
+The correspondence between protein sequences and structures , or sequence-structure map , relates to fundamental aspects of structural , evolutionary and synthetic biology . The specifics of the mapping , such as the fraction of accessible sequences and structures , or the sequences' ability to fold
+
+Model Output:
+The article explores the relationship between protein sequences and structures, known as the sequence-structure map. The mapping is influenced by the types of interactions between monomers in the protein sequence, which are encapsulated in a potential energy function. The study examines the impact o...
+----------------------------
+
+--- Sample 6 ---
+Input (first 3 lines):
+Electrophysiological studies of the human heart face the fundamental challenge that experimental data can be acquired only from patients with underlying heart disease . Regarding human atria , there exist sizable gaps in the understanding of the functional role of cellular Ca2+ dynamics , which diff
+
+Model Output:
+The study developed a mathematical model of the human atrial myocyte that accounts for the heterogeneity of intracellular Ca2+ dynamics and its impact on excitation-contraction coupling. The model simulated the biphasic increment in Ca2+ concentration during the upstroke of the Ca2+ transient, and p...
+----------------------------
+
+--- Sample 7 ---
+Input (first 3 lines):
+Microtubules are nano-machines that grow and shrink stochastically , making use of the coupling between chemical kinetics and mechanics of its constituent protofilaments ( PFs ) . We investigate the stability and shrinkage of microtubules taking into account inter-protofilament interactions and bend
+
+Model Output:
+Microtubules, the nano-machines of cells, grow and shrink stochastically due to inter-protofilament interactions and bending elasticity of curved GDP protofilaments. Computational simulations showed that the competition between curvature energy, inter-protofilament interaction energy, and entropy le...
+----------------------------
+
+--- Sample 8 ---
+Input (first 3 lines):
+Zoonotic pathogens that cause leprosy ( Mycobacterium leprae ) and tuberculosis ( Mycobacterium tuberculosis complex , MTBC ) continue to impact modern human populations . Therefore , methods able to survey mycobacterial infection in potential animal hosts are necessary for proper evaluation of huma
+
+Model Output:
+Here's the summary of the article you provided:
+
+Mycobacterium leprae and Mycobacterium tuberculosis complex (MTBC) continue to impact modern human populations, making it crucial to detect these pathogens in potential animal hosts. Researchers tested for mycobacterial-specific single- and multi-copy...
+----------------------------
+
+--- Sample 9 ---
+Input (first 3 lines):
+Historically the western sahelian dry regions of Mali are known to be highly endemic for cutaneous leishmaniasis ( CL ) caused by Leishmania major , while cases are rarely reported from the Southern savanna forest of the country . Here , we report baseline prevalence of CL infection in 3 ecologicall
+
+Model Output:
+Here is the summary of the article in plain English and under 100 words:
+
+A new study examines the prevalence of cutaneous leishmaniasis (CL) in three districts of Mali, including a dry sahelian region, a north savanna area, and a southern savanna forest. The researchers found that CL is more common...
+----------------------------
+
+--- Sample 10 ---
+Input (first 3 lines):
+Protein output from synonymous codons is thought to be equivalent if appropriate tRNAs are sufficiently abundant . Here we show that mRNAs encoding iterated lysine codons , AAA or AAG , differentially impact protein synthesis: insertion of iterated AAA codons into an ORF diminishes protein expressio
+
+Model Output:
+Here is the summary of the article you provided, condensed into a single sentence:
+
+In eukaryotes, premature translation termination on out-of-frame stop codons following ribosome sliding on homopolymeric A sequences triggers mRNA decay through the Nonsense-Mediated Decay (NMD) pathway, while in bac...
+----------------------------
+
+--- Sample 11 ---
+Input (first 3 lines):
+Human blood Vγ9/Vδ2 T cells , monocytes and neutrophils share a responsiveness toward inflammatory chemokines and are rapidly recruited to sites of infection . Studying their interaction in vitro and relating these findings to in vivo observations in patients may therefore provide crucial insight in
+
+Model Output:
+Vγ9/Vδ2 T cells, monocytes, and neutrophils work together to fight infections by sharing responsiveness to inflammatory chemokines. Studying their interaction in vitro and relating it to in vivo observations in patients can provide valuable insights into inflammatory events. Vγ9/Vδ2 T cells provide ...
+----------------------------
+
+--- Sample 12 ---
+Input (first 3 lines):
+Genome-wide scanning for signals of recent positive selection is essential for a comprehensive and systematic understanding of human adaptation . Here , we present a genomic survey of recent local selective sweeps , especially aimed at those nearly or recently completed . A novel approach was develo
+
+Model Output:
+Here is a concise summary of the article in under 100 words:
+
+This study uses genomic data to detect recent local selective sweeps, or adaptations, in human populations. The approach developed by the researchers can identify signals of selection across the genome and distinguish them from neutral ef...
+----------------------------
+
+--- Sample 13 ---
+Input (first 3 lines):
+Host restriction factors constitute a formidable barrier for viral replication to which many viruses have evolved counter-measures . Human SAMD9 , a tumor suppressor and a restriction factor for poxviruses in cell lines , is antagonized by two classes of poxvirus proteins , represented by vaccinia v
+
+Model Output:
+Here is the summary of the article in one concise paragraph for a general audience:
+
+Poxviruses, including many lethal animal and human pathogens, have evolved countermeasures to overcome host restriction factors. Human SAMD9 and its paralog SAMD9L are restriction factors for poxviruses in cell line...
+----------------------------
+
+--- Sample 14 ---
+Input (first 3 lines):
+ClinicalTrials . gov ( NCT01261130 for the Brazil trial and NCT01385189 for the US trial ) Over 400 million people are infected with hookworm , predominantly in resource-limited tropical regions of the world [1] . Hookworm is a soil-transmitted nematode helminth that is primarily acquired after skin
+
+Model Output:
+The article discusses the global burden of hookworm infection, which affects over 400 million people worldwide, primarily in resource-limited areas. Hookworm is a soil-transmitted nematode that enters the body through skin contact with infective larvae, migrates to the intestine, and feeds on host b...
+----------------------------
+
+--- Sample 15 ---
+Input (first 3 lines):
+The ability to revise one’s certainty or confidence in a preceding choice is a critical feature of adaptive decision-making but the neural mechanisms underpinning this metacognitive process have yet to be characterized . In the present study , we demonstrate that the same build-to-threshold decision
+
+Model Output:
+The study investigates the neural mechanisms underlying metacognition, specifically the ability to revise one's certainty in a previous choice. The authors demonstrate that the same decision variable signal that triggers an initial choice continues to evolve after commitment and determines the timin...
+----------------------------
+
+--- Sample 16 ---
+Input (first 3 lines):
+The oscillating concentration of intracellular calcium is one of the most important examples for collective dynamics in cell biology . Localized releases of calcium through clusters of inositol 1 , 4 , 5-trisphosphate receptor channels constitute elementary signals called calcium puffs . Coupling by
+
+Model Output:
+Here is the summary of the article in one concise paragraph for a general audience:
+
+In cell biology, the oscillation of intracellular calcium is an important example of collective dynamics. Localized releases of calcium through clusters of IP3 receptor channels are called "calcium puffs." Coupling ...
+----------------------------
+
+--- Sample 17 ---
+Input (first 3 lines):
+We present a new computational model of speech motor control: the Feedback-Aware Control of Tasks in Speech or FACTS model . FACTS employs a hierarchical state feedback control architecture to control simulated vocal tract and produce intelligible speech . The model includes higher-level control of
+
+Model Output:
+Here's a summary of the article in one concise paragraph:
+
+Researchers have developed a new computational model of speech motor control called the Feedback-Aware Control of Tasks in Speech or FACTS model. The model uses a hierarchical state feedback control architecture to produce intelligible speec...
+----------------------------
+
+--- Sample 18 ---
+Input (first 3 lines):
+Kingella kingae is an encapsulated gram-negative organism that is a common cause of osteoarticular infections in young children . In earlier work , we identified a glycosyltransferase gene called csaA that is necessary for synthesis of the [3 ) -β-GalpNAc- ( 1→5 ) -β-Kdop- ( 2→] polysaccharide capsu
+
+Model Output:
+Kingella kingae, a gram-negative bacterium, is a common cause of osteoarticular infections in young children. Earlier studies identified a gene called csaA that is essential for the synthesis of the type a capsule, but a large collection of invasive and carrier isolates from Israel revealed that onl...
+----------------------------
+
+--- Sample 19 ---
+Input (first 3 lines):
+Candida auris is an emerging , multi-drug resistant , health care-associated fungal pathogen . Its predominant prevalence in hospitals and nursing homes indicates its ability to adhere to and colonize the skin , or persist in an environment outside the host—a trait unique from other Candida species
+
+Model Output:
+Candida auris is a new, multi-drug resistant fungal pathogen that has spread globally and causes life-threatening infections. It adheres to skin and surfaces, making it difficult to remove from healthcare environments. Researchers identified adhesin proteins in C. auris and found that vaccinating mi...
+----------------------------
+
+--- Sample 20 ---
+Input (first 3 lines):
+Cutaneous Leishmaniasis ( CL ) is a neglected tropical vector-borne disease . Sand fly vectors ( SF ) and Leishmania spp parasites are sensitive to changes in weather conditions , rendering disease transmission susceptible to changes in local and global scale climatic patterns . Nevertheless , it is
+
+Model Output:
+Sand fly vector abundance decreases during hot and cold phases of El Niño Southern Oscillation (ENSO), while cutaneous leishmaniasis (CL) cases are associated with local climatic factors, including temperature and rainfall variability. A three-month lagged association was found between SF vector abu...
+----------------------------
+Saving predictions to /Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/results/test_predictions.json
+Saving inputs to /Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/results/test_input.json
+Inference complete. Predictions saved.
+
+Step 7: Evaluating Predictions...
+Traceback (most recent call last):
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 110, in <module>
+    main()
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 104, in main
+    eval_results = evaluate_model(models[0])
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/scripts/evaluate_model.py", line 32, in evaluate_model
+    with open(resultFileName, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'results/llama2_predictions.json'
+Traceback (most recent call last):
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 110, in <module>
+    main()
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/main.py", line 104, in main
+    eval_results = evaluate_model(models[0])
+  File "/Users/jacob/Desktop/MDS/COLX_585/COLX_531_Project_Cole-Daoming-Jacob-Juan/milestone5/scripts/evaluate_model.py", line 32, in evaluate_model
+    with open(resultFileName, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'results/llama2_predictions.json'
