@@ -16,7 +16,7 @@ This repository contains our group project for COLX 531 – Neural Machine Trans
   Next, it invokes `scripts/inference.py` to run the LLaMA 2 model. We pass curated prompts that ensure the summaries are short, user-friendly, and consistently formatted.
 
 - **Evaluation**  
- If a flag (e.g., shouldEvaluate) is set to True, main.py finally calls scripts/evaluate_model.py to compute metrics such as ROUGE, BLEU, and BERTScore. The results can be logged locally or to Weights & Biases for collaborative tracking.
+ If a flag (e.g., shouldEvaluate) is set to True, `scripts/evaluate_model.py` is called to compute metrics such as ROUGE, BLEU, and BERTScore. The results can be logged locally or to Weights & Biases for collaborative tracking.
 
 ---
 
